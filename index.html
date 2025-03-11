@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+    <header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#personal-name-job"><img src="home.svg" alt="icon accueil"></a></li>
+                    <li><a href="#about"><img src="man.svg" alt="icon à propos"></a></li>
+                    <li><a href="#skill"><img src="book.svg" alt="icon compétence"></a></li>
+                    <li><a href="#contact"><img src="contact.svg" alt="icon contact"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <body>
+        <main>
+            <section class="personal-name-job" id="personal-name-job">
+                    <h1>Nicolas</h1>
+                    <h2>GIRARD</h2>
+                    <p>Développeur FullStack</p><br>
+                    <p>Bienvenu sur mon portfolio</p>
+            </section>
+            <section class="btn">
+                <a href="CV 2024.pdf" download="CV de Nicolas GIRARD"><button type="button">Télécharger mon CV</button></a>
+                <a href="#about"><button type ="button"> À propos</button></a>
+            </section>
+            <section>
+                <div class="header-img-profil"></div>
+            </section>
+            <section class="about" id="about">
+                <h1> À propos</h1>
+                <div class="body-img-about"></div>
+                <p>Je suis un développeur FullStack passionné avec une expertise en HTML, CSS, JavaScript et divers frameworks tels que React et Node.js. J'ai une solide expérience dans la création d'applications web réactives et performantes. Mon savoir-faire inclut également la gestion de bases de données, l'intégration d'API et l'optimisation des performances. Je suis toujours à la recherche de nouvelles technologies et de meilleures pratiques pour améliorer mes compétences et offrir des solutions innovantes.</p>
+            </section>
+            <section class="skill" id="skill">
+                <h1>Compétences</h1>
+                <section id="softskill">
+                    <h1>Softskill</h1>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Travail d'équipe</li>
+                        <li>Résolution de problèmes</li>
+                        <li>Adaptabilité</li>
+                    </ul>
+                </section>
+                <section id="hardskill">
+                    <h1>Hardskill</h1>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </section>
+            </section>
+            <h1 id="contact">Contact</h1>
+            <section class="form">
+                <form id="form-el" action="contact" method="get">
+                    <fieldset>
+                    <legend>Votre nom</legend>
+                    <input type="text" id="name" placeholder="Nom">
+                    </fieldset>
+                    <fieldset>
+                    <legend>Votre prénom</legend>
+                    <input type="text" id="firstname" placeholder="Prénom">
+                    </fieldset>
+                    <fieldset>
+                    <legend>Votre email</legend>
+                    <input type="email" id="email" placeholder="Email">
+                    </fieldset>
+                    <fieldset>
+                    <legend for="text">Votre email</legend>
+                    <textarea name="text-el" id="text" placeholder="Écrivez votre message...."></textarea>
+                    </fieldset>
+                    <button type="button"> Envoyer >></button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
