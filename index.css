@@ -31,55 +31,44 @@ header{
     right: 5%;
     z-index: 5;
 }
-
+nav{
+    max-width: 400px;
+    margin: auto;
+}
 nav>ul{
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+    width: 400px;
     height:80px;
+    padding: 0 1em;
     background-color: var(--backgroundmenu);
     border-radius: 50px;
-    z-index: 0;
 
 }
 nav>ul>li{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 60px;
+    width:60px;
     height:60px;
-    background-color: var(--backgroundmenu);
-    border-radius: 100%;
-    padding: 1em;
     transition: .35s;
     &:hover{
         background-color: var(--background);
         border-radius: 100%;
-        width: 60px;
-        height:60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0em;
         opacity: .9;
-        
     }
-
 }
 img{
     width: 36px;
     height:36px;
-
 }
 .personal-name-job{
     text-align: center;
-    margin: 2em;
+    margin: 2em 0;
     line-height: 1.5;
-
 }
 .personal-name-job>h1{
-    margin:0;
+    margin:0 ;
 }
 .personal-name-job>p{
     color:var(--textcolor);
@@ -120,8 +109,9 @@ h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 10%;
-    height: 1024px;
+    margin:0;
+    width: 100%;
+    height: 800px;
     filter: grayscale(90%) sepia(30%);
     z-index: 1;
 }
@@ -184,7 +174,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     background-color: var(--textcolortxt);
-    margin: 4em auto;
+    margin: 4em auto ;
     padding: 2em;
     border-radius: 25px;
     color:var(--textcolor);
@@ -193,7 +183,7 @@ h1{
 
 }
 #hardskill>h1{
-    margin:0 0 3em 0 ;
+    margin:0 0 1em 0 ;
     padding:0;
 }
 #hardskill>ul{
@@ -260,12 +250,64 @@ textarea{
     &::placeholder{
         color:var(--textcolortxt);
     }
-    
 }
 form>button{
     margin: auto;
     background-color: white;
     color:var(--textcolor);
+}
+footer{
+    background-color: var(--textcolor);
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+.link-excalidraw, a{
+    color:var(--textcolortxt);
+    margin: 1em 0 0 0;
+}
+footer>section{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+footer>section>p{
+    margin: auto .5rem;
+}
+h4{
+    margin: 2em 0 0 0;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 100%;
+    
+}
+#insta{
+width: 36px;
+height: 36px;
+}
+.st0 {
+    fill: #fff;
+  }
+  .st1 {
+    fill: #fff;
+  }
+
+  .st1, .st2 {
+    fill-rule: evenodd;
+  }
+
+  .st2 {
+    fill: none;
+  }
+
+#logo-li{
+width: 36px;
+height: 36px;
+
 }
 
 @media screen and (min-width:800px){
@@ -295,7 +337,7 @@ form>button{
     nav{
         display: flex;
         margin: auto;
-        width:50%;
+        
     }
     nav>ul{
         text-align: justify;
